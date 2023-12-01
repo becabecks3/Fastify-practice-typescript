@@ -1,4 +1,4 @@
-import { Schema, model } from 'mongoose';
+import { Schema, model } from "mongoose";
 
 const productSchema = new Schema ({
     title: String,
@@ -6,11 +6,12 @@ const productSchema = new Schema ({
     image: String,
     description: String,
     quantity: Number
-}, {
-    timestamps: true, // Adds createdAt/updatedAt
-    versionKey: false, // Deletes __v 
-})
+}, 
+// {
+//     timestamps: true, // Adds createdAt/updatedAt
+//     versionKey: false, // Adds __v 
+// }
+)
 
 export default model('Product', productSchema)
-
 
