@@ -1,6 +1,5 @@
 import Product from '../models/product.models'
-import { FastifyRequest, FastifyReply, type RouteHandler } from 'fastify';
-import {  ProductType  } from '../types/product.api';
+import { type RouteHandler } from 'fastify';
 import { type Params, type Body, type Reply, type Products } from '../routes/product.schemas';
 
 const getProducts : RouteHandler<{Reply: Products}>  = async (req, reply): Promise<void>  => {
